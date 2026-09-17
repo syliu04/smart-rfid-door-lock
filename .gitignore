@@ -1,0 +1,14 @@
+# Arduino / PlatformIO build artifacts
+build/
+.pio/
+*.hex
+*.elf
+
+# Doxygen generated output
+docs/html/
+docs/latex/
+docs/xml/
+
+# OS files
+.DS_Store
+Thumbs.db
