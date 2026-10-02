@@ -25,6 +25,29 @@ Access decisions are communicated instantly through a green/red LED, a buzzer to
 - **Instant feedback** — grant/deny LEDs, distinct buzzer tones, and a live-updating LCD status display
 - **Auto-generated API documentation** via Doxygen
 
+## Skills & Concepts Demonstrated
+
+**Languages**
+C / C++ (Arduino/embedded C++)
+
+**Platforms & Frameworks**
+Arduino core for ESP32 · FreeRTOS
+
+**RTOS & Concurrency Concepts**
+Preemptive priority-based scheduling · dual-core task pinning (`xTaskCreatePinnedToCore`) · inter-task communication via queues (`xQueueSend`/`xQueueReceive`) · mutex-protected shared state (`xSemaphoreTake`/`xSemaphoreGive`) · tick-based periodic scheduling (`vTaskDelayUntil`) · event-driven task design · watchdog timer configuration
+
+**Communication Protocols**
+SPI · I2C · UART/Serial · IR remote control (NEC protocol)
+
+**Embedded Systems Concepts**
+Real-time system design · debounce/cooldown logic · state machines (operating modes) · time-based access-control logic · hardware abstraction via device driver libraries · polling vs. interrupt-driven I/O tradeoffs · resource-constrained programming (fixed-size buffers, static allocation)
+
+**Tools**
+Arduino IDE · Doxygen (API documentation generation) · Git/GitHub · serial console debugging
+
+**Engineering Practice**
+Modular task decomposition · hardware/software integration testing · technical documentation and report writing · Doxygen-style code documentation
+
 ## System Architecture
 
 ```mermaid
@@ -92,29 +115,6 @@ flowchart LR
 | Red LED (access denied) | 7 |
 | Buzzer | 8 |
 | IR receiver data | 4 |
-
-## Skills & Concepts Demonstrated
-
-**Languages**
-C / C++ (Arduino/embedded C++)
-
-**Platforms & Frameworks**
-Arduino core for ESP32 · FreeRTOS
-
-**RTOS & Concurrency Concepts**
-Preemptive priority-based scheduling · dual-core task pinning (`xTaskCreatePinnedToCore`) · inter-task communication via queues (`xQueueSend`/`xQueueReceive`) · mutex-protected shared state (`xSemaphoreTake`/`xSemaphoreGive`) · tick-based periodic scheduling (`vTaskDelayUntil`) · event-driven task design · watchdog timer configuration
-
-**Communication Protocols**
-SPI · I2C · UART/Serial · IR remote control (NEC protocol)
-
-**Embedded Systems Concepts**
-Real-time system design · debounce/cooldown logic · state machines (operating modes) · time-based access-control logic · hardware abstraction via device driver libraries · polling vs. interrupt-driven I/O tradeoffs · resource-constrained programming (fixed-size buffers, static allocation)
-
-**Tools**
-Arduino IDE · Doxygen (API documentation generation) · Git/GitHub · serial console debugging
-
-**Engineering Practice**
-Modular task decomposition · hardware/software integration testing · technical documentation and report writing · Doxygen-style code documentation
 
 ## Getting Started
 
